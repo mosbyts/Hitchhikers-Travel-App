@@ -1,0 +1,21 @@
+body{
+    background-color: lightgray;
+    text-align: center;
+ 
+}
+.containerI{
+    background-image: url("../images/nature1.jpeg");
+    height: 600px;
+}
+.form-group{
+    
+    font-size: 30px;
+    max-width: 80%;
+}
+#location{
+    font-size: 22px;
+}
+#pSearch{
+    font-size: 22px;
+}
+
