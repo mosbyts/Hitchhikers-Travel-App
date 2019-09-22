@@ -19,3 +19,38 @@ body{
     font-size: 22px;
 }
 
+/**** Beginning of CSS for the Attractions Page ****/
+.input-group {
+    margin-top: 2%;
+}
+
+.attraction-text {
+    margin: 2% 10% 0% 10%;
+    border: solid 2px darkgray;
+    background-color: white;
+}
+
+.attr-head {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 400%;
+}
+
+.find-attr {
+    margin-top: 5%;
+}
+
+.p-attr {
+    padding: 1% 4% 0% 4%;
+}
+
+.card-group {
+    margin-top: 2%;
+}
+
+.card-img-top {
+    padding: 1%;
+}
+
+/**** End of CSS for the Attractions Page ****/
+
