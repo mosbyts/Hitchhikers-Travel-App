@@ -1,3 +1,4 @@
+$(document).ready(function(){
 // Tianna's crime API start
 $("button").on("click", function(){
     queryURLCrime = "https://api.usa.gov/crime/fbi/sapi/api/agencies/" + location + "?api_key=JMLpV1qDeUxB4nk1hx39YC03ucTpKNh8sJxSyzKO";
@@ -9,5 +10,6 @@ $("button").on("click", function(){
     });
 });
 
-var location = $("button").val("");
+var location = $("input").val("");
 // Tianna's crime API end
+});
