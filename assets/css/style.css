@@ -54,3 +54,30 @@ body{
 
 /**** End of CSS for the Attractions Page ****/
 
+/*** Beg. Testimonail Page ***/
+.form-group {
+    background-color: darkgray;
+    color: brown;
+}
+
+.Form-Label {
+    padding-left: 2%;
+}
+
+.testimonial-para {
+    background-color: brown;
+    color: white;
+    font-size: 150%;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+
+.testimonial-button {
+    margin-bottom: 5%;
+}
+
+.card-header {
+    background-color: brown;
+}
+
+/*** End Testimonail Page ***/
