@@ -7,6 +7,12 @@
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">       
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+      
+ 
+        <script src="/assets/script.js" ></script>
+
     </head>
     <body>
     <div class="container">
@@ -35,7 +41,19 @@
                 <br>
                 <br>
                 <br>
-                <p id="pSearch">weather</p>
+
+                <div class="col">
+                    <div class="form-group mx-auto" style="width: 600px;">
+                        <label for="location">Please Enter a Location:</label>
+                        <input type="text" class="form-control" id="location">
+                        <br>        
+                        <input type="submit" class="btn btn-info" value="Submit Button">
+                    </div>
+                </div>
+                <div class = col-md-10>
+                    <div id = resultsWeather> Results:</div>
+
+                </div>
     </div>    
 
 
