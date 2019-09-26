@@ -1,17 +1,27 @@
-// Tianna's Crime Script Beginning
+// Tianna's Crime API Beginning
 $(document).ready(function(){
   // Tianna's crime API start
-  $("button").on("click", function(){
+  $("button").on("click", function(event){
       event.preventDefault();
-      queryURLCrime = "https://api.usa.gov/crime/fbi/sapi/api/" + location + "?api_key=JMLpV1qDeUxB4nk1hx39YC03ucTpKNh8sJxSyzKO";
+      var stateAbbr = $("#stateAbbrInput").val();
+      var crimeAPI = "api_key=JMLpV1qDeUxB4nk1hx39YC03ucTpKNh8sJxSyzKO";
+      var queryURLCrime = "https://api.usa.gov/crime/fbi/sapi/api/summarized/state/" + stateAbbr + "/violent-crime/2014/2017?" + crimeAPI;
+      
       $.ajax({
           url: queryURLCrime,
           method: "GET"
       }).then(function(response){
-          $("#pSearch").append(response);
+          var crimeResults = JSON.stringify(response.results);
+          console.log(crimeResults);
+          for(var x = 0; x < 4; x++){
+          var crimeYear = crimeResults[x].data_year;
+          var crimeType = crimeResults[x].offense;
+          var crimeCount = crimeResults[x].actual;
+          $("#crimeSearch").append("<p>" + "Crime Year: " + crimeYear + "</p>");
+          $("#crimeSearch").append("<p>" + "Crime Type: " + crimeType + "</p>");
+          $("#crimeSearch").append("<p>" + "Number of Offenses: " + crimeCount + "</p>");
+          };
       });
-      var location = $("input").val("");
-      console.log(location);
   });
 });
 // Tianna's crime API end
