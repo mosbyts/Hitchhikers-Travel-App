@@ -14,12 +14,13 @@ $(document).ready(function(){
           var crimeResults = JSON.stringify(response.results);
           console.log(crimeResults);
           for(var x = 0; x < 4; x++){
-          var crimeYear = crimeResults[x].data_year;
-          var crimeType = crimeResults[x].offense;
-          var crimeCount = crimeResults[x].actual;
-          $("#crimeSearch").append("<p>" + "Crime Year: " + crimeYear + "</p>");
-          $("#crimeSearch").append("<p>" + "Crime Type: " + crimeType + "</p>");
-          $("#crimeSearch").append("<p>" + "Number of Offenses: " + crimeCount + "</p>");
+          var parseCrimeResults = jQuery.parseJSON(crimeResults);
+          var crimeYear = parseCrimeResults[x].data_year;
+          var crimeType = parseCrimeResults[x].offense;
+          var crimeCount = parseCrimeResults[x].actual;
+          $("#crimeSearch").append("<p>" + "<strong>Crime Year: </strong>" + crimeYear + "</p>");
+          $("#crimeSearch").append("<p>" + "<strong>Crime Type: </strong>" + crimeType + "</p>");
+          $("#crimeSearch").append("<p>" + "<strong>Number of Offenses: </strong>" + crimeCount + "</p>");
           };
       });
   });
