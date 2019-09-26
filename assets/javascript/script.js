@@ -97,11 +97,10 @@ $("#testimonial-table > tbody").append(newRow);
 
 // End of Testimonal Page
 
-// Attractions page API Beginning
-// Global Variables
 
 
 
+=======
 
 // Attractions page API End
 
