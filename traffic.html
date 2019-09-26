@@ -7,13 +7,14 @@
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">       
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/trafficStyle.css">
     </head>
     <body>
 <!--Navigation-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark justify-content-center">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Search</a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="weather.html">Weather</a>
@@ -32,13 +33,37 @@
             </li>
         </ul>                 
     </nav>
-    <div class="container">
-            <div>
-                <h1 class="attr-head text-center" style="color: grey">Traffic</h1>
-            </div>
+    <div>
+        <h1 class="attr-head text-center" style="color: grey">Traffic</h1>
     </div>
+    <div style="display: none">
+        <div>
+            <input id="origin-input" class="controls" type="text"
+                placeholder="Enter an origin location">
+      
+            <input id="destination-input" class="controls" type="text"
+                placeholder="Enter a destination location">
+            </div>
+            <div id="mode-selector" class="controls">
+                <input type="radio" name="type" id="changemode-driving" checked="checked">
+                <label for="changemode-driving">Driving</label>
+              
+      
+                <input type="radio" name="type" id="changemode-transit">
+                <label for="changemode-transit">Transit</label>
+      
+      
+                <input type="radio" name="type" id="changemode-walking" >
+                <label for="changemode-walking">Walking</label>
+            </div>
+        </div>
+    <div id="map"></div>
 
+    
 
-    <script src="assets/javascript/script.js"></script>
+    
+    <script src="assets/javascript/trafficScript.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaaKlP01CThY1H_uA-0gpQJePa3yr2aHg&libraries=places&callback=initMap"
+        async defer></script>
     </body>    
 </html>
