@@ -101,7 +101,6 @@ $("#testimonial-table > tbody").append(newRow);
 
 
 
-=======
 
 // Attractions page API End
 
