@@ -19,11 +19,10 @@ $(document).ready(function(){
           var crimeYear = parseCrimeResults[x].data_year;
           var crimeType = parseCrimeResults[x].offense;
           var crimeCount = parseCrimeResults[x].actual;
-          $("#showCrimeData").append("<p>Your Crime Data</p>")
           $("#showCrimeData").append("<p>" + "<strong>State Abbreviation: </strong>" + crimeLocation + "</p>");
           $("#showCrimeData").append("<p>" + "<strong>Crime Year: </strong>" + crimeYear + "</p>");
           $("#showCrimeData").append("<p>" + "<strong>Crime Type: </strong>" + crimeType + "</p>");
-          $("#showCrimeData").append("<p>" + "<strong>Number of Offenses: </strong>" + crimeCount + "</p>");
+          $("#showCrimeData").append("<p>" + "<strong>Number of Offenses: </strong>" + crimeCount + "</p>" + "<hr color='#808080'>");
         };
       });
   });
