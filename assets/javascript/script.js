@@ -15,13 +15,16 @@ $(document).ready(function(){
           console.log(crimeResults);
           for(var x = 0; x < 4; x++){
           var parseCrimeResults = jQuery.parseJSON(crimeResults);
+          var crimeLocation = parseCrimeResults[x].state_abbr;
           var crimeYear = parseCrimeResults[x].data_year;
           var crimeType = parseCrimeResults[x].offense;
           var crimeCount = parseCrimeResults[x].actual;
-          $("#crimeSearch").append("<p>" + "<strong>Crime Year: </strong>" + crimeYear + "</p>");
-          $("#crimeSearch").append("<p>" + "<strong>Crime Type: </strong>" + crimeType + "</p>");
-          $("#crimeSearch").append("<p>" + "<strong>Number of Offenses: </strong>" + crimeCount + "</p>");
-          };
+          $("#showCrimeData").append("<p>Your Crime Data</p>")
+          $("#showCrimeData").append("<p>" + "<strong>State Abbreviation: </strong>" + crimeLocation + "</p>");
+          $("#showCrimeData").append("<p>" + "<strong>Crime Year: </strong>" + crimeYear + "</p>");
+          $("#showCrimeData").append("<p>" + "<strong>Crime Type: </strong>" + crimeType + "</p>");
+          $("#showCrimeData").append("<p>" + "<strong>Number of Offenses: </strong>" + crimeCount + "</p>");
+        };
       });
   });
 });

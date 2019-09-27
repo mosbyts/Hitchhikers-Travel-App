@@ -54,6 +54,28 @@ body{
 
 /**** End of CSS for the Attractions Page ****/
 
+/**** Beginning of CSS for the Crime Page ****/
+#crimeHeader{
+    color: darkgray;
+    font-size: 400%;
+    margin-top: -50px;
+}
+
+.find-crime {
+    margin-top: 5%;
+}
+
+.crime-text {
+    margin: 2% 10% 0% 10%;
+    border: solid 2px darkgray;
+    background-color: white;
+}
+
+#crimeSearch{
+    font-size: 22px;
+}
+/**** End of CSS for the Crime Page ****/
+
 /*** Beg. Testimonail Page ***/
 .form-group {
     background-color: darkgray;
