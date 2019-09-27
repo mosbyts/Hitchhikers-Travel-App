@@ -1,16 +1,3 @@
-/*
-var firebaseConfig = {
-    apiKey: "AIzaSyA0rEGLAL2x1ambCJwphw2544zauLJGXoE",
-    authDomain: "weatherapi-1043e.firebaseapp.com",
-    databaseURL: "https://weatherapi-1043e.firebaseio.com",
-    projectId: "weatherapi-1043e",
-    storageBucket: "",
-    messagingSenderId: "974416964954",
-    appId: "1:974416964954:web:70f11cb2e53199de4c1763"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-*/
 
   function getWeather(city){
 	if (city) {
