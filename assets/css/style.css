@@ -1,7 +1,11 @@
+
+/**** Beginning of all pages CSS ****/
+
 html{
     height: 100%;
     margin: 0;
     padding: 0;
+
 }
 body{
     height: 100%;
@@ -9,7 +13,7 @@ body{
     padding: 0;
     background-color: #d3d3d3;
 }
-/**** Beginning of all pages CSS ****/
+
 .containerI{
     background-image: url("../images/nature1.jpeg");
     height: 600px;
@@ -208,7 +212,9 @@ a {
 
   #origin-input:focus,
   #destination-input:focus {
+
     border-color: #a52a2a;
+
   }
 
   #mode-selector {
@@ -227,3 +233,4 @@ a {
 /*** End of Traffic ***/
 
 /*** End of CSS for the Testimonial Page ***/
+
