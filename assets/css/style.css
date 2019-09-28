@@ -30,9 +30,6 @@ body{
 }
 
 .attraction-text {
-
-    border: solid 2px darkgray;
-    background-color: white; 
     margin: 2% 10% 0% 10%;
     border: solid 2px #808080;
     background-color: #ffffff;
@@ -52,37 +49,12 @@ body{
     padding: 1% 4% 0% 4%;
 }
 
-.card-deck {
+.card-group {
     margin-top: 2%;
 }
 
 .card-img-top {
     padding: 1%;
-}
-
-.searchForm-container {
-    margin-top: 2%;
-}
-
-.searchForm {
-    margin-top: 1%;
-}
-
-.resultItem {
-    text-align: left;
-    color: brown;
-    border: solid 1px black;
-    padding: 2%;
-    margin-top: 2%;
-    font-weight: 500;
-}
-
-a {
-   color: black;
-}
-
-.footer {
-    margin-top: 5%;
 }
 
 /**** End of CSS for the Attractions Page ****/
@@ -152,3 +124,15 @@ a {
 }
 
 /*** End Testimonial Page ***/
+
+/*** Start of Weather Page ***/
+
+.table {
+    background: lightskyblue;
+}
+
+
+
+
+
+/*** End of Weather Page ***/
