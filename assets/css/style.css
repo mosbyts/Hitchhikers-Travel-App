@@ -27,7 +27,7 @@ body{
     font-size: 22px;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+.btn-info, .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #a52a2a !important;
     border-color: #a52a2a !important;
 }
@@ -75,6 +75,18 @@ body{
 
 .searchForm {
     margin-top: 1%;
+}
+
+#wikiLogo{
+    display: block;
+    margin: auto;
+}
+
+#attrInput{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 23%;
 }
 
 .resultItem {
