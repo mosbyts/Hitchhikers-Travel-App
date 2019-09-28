@@ -1,6 +1,6 @@
-
+/**** Beginning of all pages CSS ****/
 body{
-    background-color: lightgray;
+    background-color: #d3d3d3;
     text-align: center; 
 }
 .containerI{
@@ -20,9 +20,10 @@ body{
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: brown !important;
-    border-color: brown !important;
+    background-color: #a52a2a !important;
+    border-color: #a52a2a !important;
 }
+/**** End of all pages CSS ****/
 
 /**** Beginning of CSS for the Attractions Page ****/
 .input-group {
@@ -31,8 +32,8 @@ body{
 
 .attraction-text {
 
-    border: solid 2px darkgray;
-    background-color: white; 
+    border: solid 2px #808080;
+    background-color: #ffffff; 
     margin: 2% 10% 0% 10%;
     border: solid 2px #808080;
     background-color: #ffffff;
@@ -52,7 +53,7 @@ body{
     padding: 1% 4% 0% 4%;
 }
 
-.card-deck {
+.card-group {
     margin-top: 2%;
 }
 
@@ -70,21 +71,20 @@ body{
 
 .resultItem {
     text-align: left;
-    color: brown;
-    border: solid 1px black;
+    color: #a52a2a;
+    border: solid 1px #000000;
     padding: 2%;
     margin-top: 2%;
     font-weight: 500;
 }
 
 a {
-   color: black;
+   color: #000000;
 }
 
 .footer {
     margin-top: 5%;
 }
-
 /**** End of CSS for the Attractions Page ****/
 
 /**** Beginning of CSS for the Crime Page ****/
@@ -96,7 +96,7 @@ a {
 
 #crimeImage{
     max-height: auto;
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .find-crime {
@@ -114,7 +114,7 @@ a {
 }
 
 #showCrimeData{
-    background-color: brown;
+    background-color: #a52a2a;
     border: solid 2px #808080;
     color: #ffffff;
     margin: auto;
@@ -125,10 +125,10 @@ a {
 
 /**** End of CSS for the Crime Page ****/
 
-/*** Beg. Testimonial Page ***/
+/*** Beginning of CSS for the Testimonial Page ***/
 .form-group {
     background-color: #808080;
-    color: brown;
+    color: #a52a2a;
 }
 
 .Form-Label {
@@ -136,7 +136,7 @@ a {
 }
 
 .testimonial-para {
-    background-color: brown;
+    background-color: #a52a2a;
     color: #ffffff;
     font-size: 150%;
     padding: 2%;
@@ -148,7 +148,6 @@ a {
 }
 
 .card-header {
-    background-color: brown;
+    background-color: #a52a2a;
 }
-
-/*** End Testimonial Page ***/
+/*** End of CSS for the Testimonial Page ***/
