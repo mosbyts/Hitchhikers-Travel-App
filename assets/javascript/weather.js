@@ -1,4 +1,4 @@
-
+git 
   function getWeather(city){
 	if (city) {
 	var xhr=new XMLHttpRequest();
