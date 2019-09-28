@@ -1,4 +1,3 @@
-
 /**** Beginning of all pages CSS ****/
 
 html{
@@ -166,17 +165,23 @@ a {
 .testimonial-para {
     background-color: #a52a2a;
     color: #ffffff;
-    font-size: 150%;
+    font-size: 125%;
     padding: 2%;
     margin-bottom: 5%;
 }
 
 .testimonial-button {
+    display: block;
+    margin: auto;
     margin-bottom: 5%;
 }
 
 .card-header {
     background-color: #a52a2a;
+}
+
+th{
+    font-weight: bold;
 }
 
 /*** End Testimonial Page ***/
