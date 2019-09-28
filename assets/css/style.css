@@ -30,6 +30,10 @@ body{
     font-size: 22px;
 }
 
+h3{
+    color: #a52a2a;
+}
+
 .btn-info, .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #a52a2a !important;
     border-color: #a52a2a !important;
