@@ -19,14 +19,23 @@ body{
     font-size: 22px;
 }
 
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: brown !important;
+    border-color: brown !important;
+}
+
 /**** Beginning of CSS for the Attractions Page ****/
 .input-group {
     margin-top: 2%;
 }
 
 .attraction-text {
+
     border: solid 2px darkgray;
-    background-color: white;
+    background-color: white; 
+    margin: 2% 10% 0% 10%;
+    border: solid 2px #808080;
+    background-color: #ffffff;
 }
 
 .attr-head {
@@ -78,9 +87,47 @@ a {
 
 /**** End of CSS for the Attractions Page ****/
 
-/*** Beg. Testimonail Page ***/
+/**** Beginning of CSS for the Crime Page ****/
+#crimeHeader{
+    color: #808080;
+    font-size: 400%;
+    margin-top: -50px;
+}
+
+#crimeImage{
+    max-height: auto;
+    max-width: 200px;
+}
+
+.find-crime {
+    margin-top: 5%;
+}
+
+.crime-text {
+    margin: 2% 10% 0% 10%;
+    border: solid 2px #808080;
+    background-color:#ffffff;
+}
+
+#crimeSearch{
+    font-size: 22px;
+}
+
+#showCrimeData{
+    background-color: brown;
+    border: solid 2px #808080;
+    color: #ffffff;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 60%;
+    text-align: center;
+}
+
+/**** End of CSS for the Crime Page ****/
+
+/*** Beg. Testimonial Page ***/
 .form-group {
-    background-color: darkgray;
+    background-color: #808080;
     color: brown;
 }
 
@@ -90,7 +137,7 @@ a {
 
 .testimonial-para {
     background-color: brown;
-    color: white;
+    color: #ffffff;
     font-size: 150%;
     padding: 2%;
     margin-bottom: 5%;
@@ -104,4 +151,4 @@ a {
     background-color: brown;
 }
 
-/*** End Testimonail Page ***/
+/*** End Testimonial Page ***/
