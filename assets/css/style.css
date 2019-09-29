@@ -116,20 +116,22 @@ a {
 
 /**** Beginning of CSS for the Crime Page ****/
 #crimeHeader{
+    clear: both;
     color: #808080;
-    font-size: 400%;
+    font-size: 380%;
     margin-top: -50px;
     text-align: center;
 }
 
-#crimeImage{
+.familyImage{
     display: block;
     margin: auto;
     max-height: auto;
-    max-width: 125px;
+    max-width: 650px;
 }
 
 .find-crime {
+    clear: both;
     margin-top: 5%;
 }
 
