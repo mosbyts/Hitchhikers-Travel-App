@@ -14,9 +14,6 @@
         <!-- Animate on Scroll -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-        
-
     </head>
 
     <body>
@@ -112,12 +109,14 @@
             <div>
                 <header class="searchForm-container">
             
-                    <img src="https://image.ibb.co/e6vOFQ/wikipedia.png" alt="Wikipedia Logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <img id=wikiLogo src="https://image.ibb.co/e6vOFQ/wikipedia.png" alt="Wikipedia Logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             
                     <form class="searchForm" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                    <input type="search" class="searchForm-input">
-                    <button type="submit" class="btn btn-info" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                        <img src="https://image.ibb.co/cpG8zk/search.png" alt="Magnifying Glass Icon" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                        <div id="attrInput">
+                            <input type="search" class="searchForm-input">
+                            <button type="submit" class="btn btn-info" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                            <img src="https://image.ibb.co/cpG8zk/search.png" alt="Magnifying Glass Icon" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                        </div>
                     </form>
             
                 </header>
@@ -167,12 +166,9 @@
             </div>
         </div>
         
-
-
        <!--Javascript-->
        <script src="assets/javascript/wiki-api.js"></script>   
         
-
         <!-- AOS Script Function -->
         <script>
             AOS.init();
