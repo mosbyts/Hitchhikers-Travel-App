@@ -9,7 +9,7 @@ git
 			document.getElementById('cityname').value="";
 		}
 	};
-	xhr.open("GET","http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=d610395e85b50074b834a0234b0776db");
+	xhr.open("GET","http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=d610395e85b50074b834a0234b0776db");
 	xhr.send();
   }
   else{
@@ -25,11 +25,11 @@ function formatWeather(data){
 	return "<h3>Current Weather for " + data.name + ", " + data.sys.country + "</h3>" + 
 			"<p>Weather: " + data.weather[0].main+ "</p>" + 
 			"<p>Weather Description: " + data.weather[0].description +"<img src='http://openweathermap.org/img/w/" + data.weather[0].icon + ".png'/>" + "</p>" + 
-			"<p>Temperature: " + data.main.temp + "&deg;C</p>" + 
+			"<p>Temperature: " + data.main.temp + "&deg;F</p>" + 
 			"<p>Pressure: " + data.main.pressure + "hPa</p>" + 
 			"<p>Humidity: " + data.main.humidity + "%</p>" + 
-			"<p>Min Temperature: " + data.main.temp_min + "&deg;C</p>" + 
-			"<p>Max Temperature: " + data.main.temp_max + "&deg;C</p>" + 
+			"<p>Min Temperature: " + data.main.temp_min + "&deg;F</p>" + 
+			"<p>Max Temperature: " + data.main.temp_max + "&deg;F</p>" + 
 			"<p>Wind Speed: " + data.wind.speed + "m/s</p>";
 }
 
@@ -44,7 +44,7 @@ function getForecast(city,days){
 			document.getElementById('days').value=""
 		}
 	};
-	xhr.open("GET","http://api.openweathermap.org/data/2.5/forecast/daily?q="+ city + "&cnt=" + days + "&units=metric&appid=d610395e85b50074b834a0234b0776db");
+	xhr.open("GET","http://api.openweathermap.org/data/2.5/forecast/daily?q="+ city + "&cnt=" + days + "&units=imperial&appid=d610395e85b50074b834a0234b0776db");
 	xhr.send();
 	return false;
 }
@@ -56,10 +56,10 @@ function formatForecast(data){
 		table += "<td><img src='http://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png'/></td>";
 		table += "<td>" + data.list[i].weather[0].main + "</td>";
 		table += "<td>" + data.list[i].weather[0].description + "</td>";
-		table += "<td>" + data.list[i].temp.morn + "&deg;C</td>";
-		table += "<td>" + data.list[i].temp.night + "&deg;C</td>";
-		table += "<td>" + data.list[i].temp.min + "&deg;C</td>";
-		table += "<td>" + data.list[i].temp.max + "&deg;C</td>";
+		table += "<td>" + data.list[i].temp.morn + "&deg;F</td>";
+		table += "<td>" + data.list[i].temp.night + "&deg;F</td>";
+		table += "<td>" + data.list[i].temp.min + "&deg;F</td>";
+		table += "<td>" + data.list[i].temp.max + "&deg;F</td>";
 		table += "<td>" + data.list[i].pressure + "hPa</td>";
 		table += "<td>" + data.list[i].humidity + "%</td>";
 		table += "<td>" + data.list[i].speed + "m/s</td>";

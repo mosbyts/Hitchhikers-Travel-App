@@ -157,6 +157,7 @@ a {
 .form-group {
     background-color: #808080;
     color: #a52a2a;
+    
 }
 
 .Form-Label {
@@ -233,4 +234,38 @@ a {
 /*** End of Traffic ***/
 
 /*** End of CSS for the Testimonial Page ***/
+
+/** Start of Weather Styling ***/
+
+.table-weather {
+    background-color: lightskyblue;
+    border: #000000 solid 1px;
+}
+
+.btn-weather{
+    background-color: #a52a2a !important;
+    border-color: #a52a2a !important;
+    align-content: center;
+}
+
+#submitCity {
+    margin-left: 50px;
+}
+ #weatherJumbo {
+   /* background: url("/assets/images/Weather-Icons.png"); */
+    background-color: lightskyblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+    align-content: center;
+    text-align: center;
+    border: #000000 solid 1px;
+ }
+
+ #submitCity {
+     margin-left: 110px;
+     margin-bottom: 30px;
+ }
+
+
 
