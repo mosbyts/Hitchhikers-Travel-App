@@ -1,4 +1,3 @@
-
 /**** Beginning of all pages CSS ****/
 
 html{
@@ -15,7 +14,7 @@ body{
 }
 
 .containerI{
-    background-image: url("../images/nature1.jpeg");
+    background-image: url("../images/road.jpg");
     height: 600px;
 }
 
@@ -29,6 +28,10 @@ body{
 }
 #pSearch{
     font-size: 22px;
+}
+
+h3{
+    color: #a52a2a;
 }
 
 .btn-info, .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
@@ -113,20 +116,22 @@ a {
 
 /**** Beginning of CSS for the Crime Page ****/
 #crimeHeader{
+    clear: both;
     color: #808080;
-    font-size: 400%;
-    margin-top: -50px;
+    font-size: 380%;
+    margin-top: -125px;
     text-align: center;
 }
 
-#crimeImage{
+.familyImage{
     display: block;
     margin: auto;
     max-height: auto;
-    max-width: 125px;
+    max-width: 70%;
 }
 
 .find-crime {
+    clear: both;
     margin-top: 5%;
 }
 
@@ -167,17 +172,22 @@ a {
 .testimonial-para {
     background-color: #a52a2a;
     color: #ffffff;
-    font-size: 150%;
+    font-size: 125%;
     padding: 2%;
     margin-bottom: 5%;
 }
 
 .testimonial-button {
+    margin: auto;
     margin-bottom: 5%;
 }
 
 .card-header {
     background-color: #a52a2a;
+}
+
+th{
+    font-weight: bold;
 }
 
 /*** End Testimonial Page ***/
