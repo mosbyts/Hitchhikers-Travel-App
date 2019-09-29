@@ -270,6 +270,7 @@ th{
     align-content: center;
     text-align: center;
     border: #000000 solid 1px;
+    margin-top: 20px;
  }
 
  #submitCity {
