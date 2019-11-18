@@ -1,4 +1,4 @@
-# Project1
+# Hitchhikers Travel App - https://mosbyts.github.io/Hitchhikers-Travel-App/
 UR FSF Bootcamp PT - 1st Project
 
 In this assignment, we were given teamates in which we had to complete the following tasks as a team:
